@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:kangaroom_mobile/models/login/login.dart';
 import 'package:kangaroom_mobile/services/api_service.dart';
 import 'package:kangaroom_mobile/config/global_config.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import '../anasayfa_pages/ana_sayfa.dart';
 
 class LoginController {
@@ -40,6 +41,10 @@ class LoginController {
         GlobalConfig.soyad = loginResponse.soyad;
         GlobalConfig.iletisim = loginResponse.iletisim;
 
+        // personelID'yi shared_preferences'a kaydet
+        final prefs = await SharedPreferences.getInstance();
+        await prefs.setInt('personelID', loginResponse.id);
+
         // Ana sayfaya yönlendir
         Navigator.of(context).pushReplacement(
           MaterialPageRoute(builder: (context) => const AnaSayfa()),
@@ -56,16 +61,17 @@ class LoginController {
   void _showErrorDialog(BuildContext context, String message) {
     showDialog(
       context: context,
-      builder: (_) => AlertDialog(
-        title: const Text("Hata"),
-        content: Text(message),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.pop(context),
-            child: const Text("Tamam"),
+      builder:
+          (_) => AlertDialog(
+            title: const Text("Hata"),
+            content: Text(message),
+            actions: [
+              TextButton(
+                onPressed: () => Navigator.pop(context),
+                child: const Text("Tamam"),
+              ),
+            ],
           ),
-        ],
-      ),
     );
   }
 
