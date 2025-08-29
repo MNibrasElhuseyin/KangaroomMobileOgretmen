@@ -1,0 +1,29 @@
+sinifTakip + GET
+ogrenciTakip + GET
+dersResimVideo + GET
+mesaj + GET
+kiyafetTalep + GET
+boyKilo + GET
+etkinlikTanimlama + GET
+etkinlikOnay + GET
+ogrenciAnaliz + GET
+karne + GET
+beslenmeProgrami + GET
+nobetciOgretmen + GET
+
+------------------------------
+
+sinifTakip ~/ POST
+ogrenciTakip ~/ POST
+dersResimVideo ~/ POST
+mesaj ~/ POST
+kiyafetTalep ~/ POST
+boyKilo ~/ POST
+etkinlikTanimlama ~/ POST
+etkinlikOnay ~/ POST
+ogrenciAnaliz ~/ POST
+karne ~/ POST
+beslenmeProgrami ~/ POST
+nobetciOgretmen ~/ POST
+
+------------------------------
