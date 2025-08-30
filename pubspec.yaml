@@ -27,6 +27,10 @@ dependencies:
   open_file: ^3.3.2
   wechat_assets_picker: ^9.0.0
   image_picker: ^1.2.0
+  shared_preferences: ^2.5.3
+  firebase_core: ^4.0.0
+  firebase_messaging: ^16.0.0
+  permission_handler: ^12.0.1
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -36,6 +40,7 @@ dev_dependencies:
 flutter:
   assets:
     - assets/images/
+    - assets/kangaroommobileogretmen-firebase-adminsdk-fbsvc-b0c076f67e.json
     - assets/images/kango.png
     - assets/icons/
     - assets/icons/teacher.png

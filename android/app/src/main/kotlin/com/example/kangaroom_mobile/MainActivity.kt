@@ -1,4 +1,4 @@
-package com.example.kangaroom_mobile
+package com.missoft.kangaroom_mobile
 
 import io.flutter.embedding.android.FlutterActivity
 

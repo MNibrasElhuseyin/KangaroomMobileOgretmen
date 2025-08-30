@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "177852946721",
+    "project_id": "kangaroommobileogretmen",
+    "storage_bucket": "kangaroommobileogretmen.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:177852946721:android:60de40e36e24ca41280660",
+        "android_client_info": {
+          "package_name": "com.missoft.kangaroom_mobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoQNoTVpqphkTu18_HhfyGIzoXw6J25nY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
